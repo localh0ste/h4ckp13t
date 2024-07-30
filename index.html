@@ -51,6 +51,54 @@
       font-size: 30px;
       color: #fff;
     }
+
+    @media (max-width: 768px) {
+      .header__inner {
+        flex-direction: column;
+        align-items: center;
+      }
+      .menu__inner {
+        flex-direction: row;
+        justify-content: center;
+      }
+      .logo img {
+        width: 40px;
+      }
+      .typewriter h1 {
+        font-size: 1.5em;
+        white-space: normal;
+      }
+      .social-icons a {
+        font-size: 25px;
+        margin: 0 5px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo img {
+        width: 30px;
+      }
+      .typewriter h1 {
+        font-size: 1.2em;
+        white-space: normal;
+      }
+      .social-icons a {
+        font-size: 20px;
+        margin: 0 3px;
+      }
+      .menu__inner {
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+      }
+      .menu__inner li {
+        margin: 0 5px;
+        padding: 0;
+      }
+      .menu__inner li a {
+        font-size: 1.2em;
+      }
+    }
   </style>
 </head>
 <body class="dark-theme">
@@ -101,7 +149,7 @@
     document.addEventListener('DOMContentLoaded', function() {
       const textArray = [
         "Panipat Institute Of Engineering and Technology",
-        "H4CKP13T CYBER SECURITY"
+        "H4CKPI3T Cyber Security"
       ];
       let textIndex = 0;
       let charIndex = 0;
